@@ -1,0 +1,21 @@
+/* ==========================================================================
+*   #LINKS
+   ========================================================================== */
+
+a {
+  background-color: transparent;
+  
+  &,
+  &:link,
+  &:active{ 
+  text-decoration: none;
+  transition: $global-transition;
+  word-wrap: normal;
+  color: $color-link;
+
+    &:hover,
+    &:focus {
+      color: $color-hover;
+    }
+  } 
+}

@@ -1,0 +1,23 @@
+@mixin underline-links ( $bg-color: $color-hover){
+  &:link,            
+  &:active {
+    position: relative;
+    text-transform: uppercase;
+    
+    &::after {
+      @include pseudo();
+      left: 0;
+      height: 2px;
+      background-color: $bg-color;
+      transform-origin: 0;
+      transition: $global-transition;
+      width: 0;
+    }
+  }
+
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    width: 100%;
+  }
+}

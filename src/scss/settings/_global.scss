@@ -1,0 +1,11 @@
+/// ========================================================================
+//   * GLOBAL Settings
+//   ========================================================================
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+$browser-context: 16 !default; // Default;
+
+$global-radius: 6px !default;
+$global-transition: all 400ms linear !default;
+$global-tranform-scale: scale(1.2) !default;
