@@ -29,7 +29,7 @@ $ npm install
 Run the local webpack-dev-server with livereload and autocompile on [http://localhost:3333/](http://localhost:3333/)
 
 ```sh
-$ npm run dev
+$ npm start
 ```
 
 ## Deployment
