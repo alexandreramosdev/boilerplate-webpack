@@ -1,6 +1,6 @@
 # Boilerplate Webpack
 
-> Plain webpack 4 boilerplate with Babel, SASS and lodash on board
+> Plain webpack 4 boilerplate with Babel, SASS and Template ejs
 
 ## Requirements
 
