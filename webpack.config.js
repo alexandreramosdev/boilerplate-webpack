@@ -1,7 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const HtmlWebpackExcludeAssetsPlugin = require("html-webpack-exclude-assets-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const isDevelopment = process.env.NODE_ENV === "development";
@@ -28,16 +27,6 @@ module.exports = {
           compact: true
         },
         include: path.join(__dirname, "scr/javascript")
-      },
-      {
-        test: /\.html$/,
-        use: {
-          loader: "html-loader",
-          options: {
-            minimize: true,
-            attrs: ["img:src", "source:srcset"]
-          }
-        }
       },
       {
         test: /\.(png|jpg|jpeg|svg|woff2?|ttf|otf|eot)$/,
@@ -75,7 +64,7 @@ module.exports = {
       },
       {
         test: /\.(ejs)$/,
-        loader: "ejs-compiled-loader"
+        loader: "compile-ejs-loader"
       }
     ]
   },
@@ -83,17 +72,15 @@ module.exports = {
   plugins: [
     customHtmlWebpackPlugin({
       filename: "index.html",
-      template: "!!ejs-compiled-loader!./src/views/pages/index.ejs",
-      title: "home"
+      template: "!!compile-ejs-loader!./src/views/pages/index.ejs",
+      head: { title: "Home" }
     }),
 
     customHtmlWebpackPlugin({
       filename: "page2.html",
-      template: "!!ejs-compiled-loader!./src/views/pages/page2.ejs",
-      title: "page2"
+      template: "!!compile-ejs-loader!./src/views/pages/page2.ejs",
+      head: { title: "Page2" }
     }),
-
-    new HtmlWebpackExcludeAssetsPlugin(),
 
     new MiniCssExtractPlugin({
       filename: isDevelopment ? "[name].[ext]" : "[name].[chunkhash].css",
