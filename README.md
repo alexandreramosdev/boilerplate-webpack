@@ -14,7 +14,7 @@ Download in current directory
 $ curl -L -o master.zip https://github.com/alexandreramosdev/boilerplate-webpack/archive/master.zip && \
   unzip master.zip && \
   rm master.zip && \
-  mv ./ boilerplate-webpack-master/{.,}* ./ && \
+  mv ./boilerplate-webpack-master/{.,}* ./ && \
   rm -r ./boilerplate-webpack-master && \
   npm install
 ```
