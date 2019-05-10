@@ -13,7 +13,7 @@ If you don’t want to work with lodash, just remove it from the node packages a
 Download in current directory
 
 ```sh
-$ curl -L -o master.zip https://github.com/alexandreramosdev/boilerplate-webpack/archive/master.zip && unzip master.zip && rm master.zip && mv ./boilerplate-webpack-master/{.,}* ./ && rm -r ./boilerplate-webpack-master
+$ curl -L -o master.zip https://github.com/alexandreramosdev/boilerplate-webpack/archive/master.zip && unzip master.zip && rm master.zip && mv ./ boilerplate-webpack-master/{.,}* ./ && rm -r ./boilerplate-webpack-master && npm i
 ```
 
 ## Setup
