@@ -1,5 +1,5 @@
 {
-  "name": "iatec",
+  "name": "boilerplate-webpack",
   "version": "1.0.0",
   "description": "",
   "main": "src/javascript/index.js",
@@ -7,37 +7,25 @@
     "start": "NODE_ENV=development webpack-dev-server --mode=development --open  --config webpack.config.dev.js",
     "build": "webpack --mode=production --config webpack.config.prod.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alexandreramosdev/agenciared-iatec.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alexandreramosdev/agenciared-iatec/issues"
-  },
-  "homepage": "https://github.com/alexandreramosdev/agenciared-iatec#readme",
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.4.4",
     "autoprefixer": "^9.5.1",
     "babel-loader": "^8.0.5",
-    "bable-loader": "0.0.1-security",
     "clean-webpack-plugin": "^2.0.2",
+    "compile-ejs-loader": "0.0.2",
     "css-loader": "^2.1.1",
-    "ejs-compiled-loader": "^1.1.0",
+    "ejs": "^2.6.1",
     "file-loader": "^3.0.1",
-    "html-loader": "^0.5.5",
-    "html-webpack-exclude-assets-plugin": "0.0.7",
     "html-webpack-plugin": "^3.2.0",
-    "image-sprite-webpack-plugin": "^0.2.4",
     "mini-css-extract-plugin": "^0.6.0",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
-    "resolve-url-loader": "^3.1.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
