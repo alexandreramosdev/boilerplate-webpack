@@ -11,12 +11,14 @@ You only need <b>node.js</b> pre-installed and you’re good to go.
 Download in current directory
 
 ```sh
+
 $ curl -L -o master.zip https://github.com/alexandreramosdev/boilerplate-webpack/archive/master.zip && \
   unzip master.zip && \
   rm master.zip && \
   mv ./boilerplate-webpack-master/{.,}* ./ && \
   rm -r ./boilerplate-webpack-master && \
   npm install
+
 ```
 
 ## Setup
@@ -24,7 +26,9 @@ $ curl -L -o master.zip https://github.com/alexandreramosdev/boilerplate-webpack
 Install dependencies
 
 ```sh
+
 $ npm install
+
 ```
 
 ## Development
@@ -47,3 +51,7 @@ $ npm run build
 
 If you're not familiar with webpack, the [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) will serve the static files in your build folder and watch your source files for changes.
 When changes are made the bundle will be recompiled. This modified bundle is served from memory at the relative path specified in publicPath.
+
+## License
+
+MIT &copy; [Alexandre Ramos](https://github.com/alexandreramosdev)
