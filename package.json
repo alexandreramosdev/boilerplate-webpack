@@ -11,11 +11,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.4.4",
+    "@babel/core": "^7.4.5",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/preset-env": "^7.4.4",
-    "autoprefixer": "^9.5.1",
-    "babel-loader": "^8.0.5",
+    "@babel/preset-env": "^7.4.5",
+    "autoprefixer": "^9.6.0",
+    "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^2.0.2",
     "compile-ejs-loader": "0.0.2",
     "css-loader": "^2.1.1",
@@ -29,9 +29,9 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
-    "webpack": "^4.31.0",
+    "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.3.1",
+    "webpack-dev-server": "^3.5.1",
     "webpack-merge": "^4.2.1"
   }
 }
